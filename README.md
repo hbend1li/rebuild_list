@@ -1,6 +1,8 @@
-# Password rebuild list
+# Rebuild list
 
-### RUN
+To concat two list, for example `list.txt` in to `wordlist.txt` and eliminate redundant word.
+
+### RUN  
 ```bash
-$ sudo python3 rebuild_password.py test.txt
+$ python3 rebuild_list.py test.txt wordlist.txt
 ```
