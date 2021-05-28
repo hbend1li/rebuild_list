@@ -29,7 +29,6 @@ for line in new_wordlist:
   ln = word*100/new_lines
   line = line.replace('\r', '').replace('\n', '')
   
-  print("  [%.1f%%, %dpwd, +%d] %s                                " %(ln,pw,pw_add,line), end ="\r")
   
   Found = False
   for line_wordlist in wordlist:
@@ -49,6 +48,8 @@ for line in new_wordlist:
     #print ("+ %s                                    " % line)
     word_added = word_added+1
 
+  print("  [%.1f%%, %dpwd, +%d] %s                                " %(ln,word,word_added,line), end ="\r")
+  
   # if keyboard.is_pressed('esc'):
   #   break
 
